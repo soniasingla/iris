@@ -60,7 +60,7 @@ class Test(BaseTest):
         # Wait a moment for the suggests list to fully populate before stepping down through it.
         time.sleep(Settings.UI_DELAY)
 
-        repeat_key_down(10)
+        repeat_key_down(7)
         key_to_one_off_search(settings_gear_highlighted)
 
         expected = region.exists(settings_gear_highlighted, 10)
