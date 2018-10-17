@@ -60,14 +60,6 @@ class Test(BaseTest):
         # Wait a moment for the suggests list to fully populate before stepping down through it.
         time.sleep(Settings.UI_DELAY)
 
-        """max_attempts = 16
-
-        while max_attempts > 0:
-            scroll_down()
-            if exists(settings_gear_highlighted, 0.5):
-                max_attempts = 0
-            max_attempts -= 1
-        """
         repeat_key_down(10)
         key_to_one_off_search(settings_gear_highlighted)
 
